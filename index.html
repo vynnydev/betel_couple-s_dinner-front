@@ -1,67 +1,73 @@
 <!DOCTYPE html>
 <html>
+  <head>
 
-<head>
+    <link rel="stylesheet" type="text/css" href="./assets/css/app.css">
+    <script src="./assets/js/index.js"></script>
+    <title>&#10073; Jantar de Casais Betel</title>
 
-  <link rel="stylesheet" type="text/css" href="./assets/css/app.css">
-  <script src="./assets/js/index.js"></script>
-  <title>&#10073; Jantar de Casais Betel</title>
+  </head>
 
-</head>
+  <body>
 
-<body>
+    <h1 class="centering"><span id="h1-symbol">&#10073;&nbsp;</span>Jantar de
+      Casais Betel</h1>
 
-  <h1 class="centering"><span id="h1-symbol">&#10073;&nbsp;</span>Jantar de Casais Betel</h1>
-
-  <div id="buttons-wrapper" class="centering">
-    <button type="button" class="buttons" onclick="addData()" title="Add new row to the table from the text inputs">Add</button>
-    <span class="gap-1"></span>
-    <button type="button" class="buttons" onclick="deleteData()" title="Delete selected row">Delete</button>
-    <span class="gap-1"></span>
-    <button type="button" class="buttons" onclick="clearData()" title="Clear selection and text inputs">Clear</button>
-  </div>
-
-  <br>
-
-  <div id="inputs-wrapper" class="centering">
-    <label for="couple" class="labels">Casal:</label>
-    <input type="text" id="couple" class="textinput gap-2" placeholder="Casal (required)">
-    <span class="gap-1"></span>
-    <label for="church" class="labels">Igreja:</label>
-    <input type="text" id="church" class="textinput gap-2" placeholder="Igreja (required)">
-  </div>
-
-  <br>
-
-  <div id="grid-container">
-
-    <div id="table-wrapper">
-      <table id="data-table">
-        <thead>
-          <tr>
-            <th>Casal</th>
-            <th>Igreja</th>
-            <th class="tradio">Select</th>
-          </tr>
-        </thead>
-        <tbody></tbody>
-      </table>
+    <div id="buttons-wrapper" class="centering">
+      <button type="button" class="buttons" onclick="addData()"
+        title="Add new row to the table from the text inputs">Add</button>
+      <span class="gap-1"></span>
+      <button type="button" class="buttons" onclick="deleteData()"
+        title="Delete selected row">Delete</button>
+      <span class="gap-1"></span>
+      <button type="button" class="buttons" onclick="clearData()"
+        title="Clear selection and text inputs">Clear</button>
     </div>
 
-    <div id="table-btn-wrapper">
-      <span class="table-btn" onclick="selectTopOrBottomRow(1)" title="Select first row (of the table)">&#708;</span>
-      <span class="table-btn" onclick="selectTopOrBottomRow(0)" title="Select last row (of the table)">&#709</span>
+    <br>
+
+    <div id="inputs-wrapper" class="centering">
+      <label for="couple" class="labels">Casal:</label>
+      <input type="text" id="couple" class="textinput gap-2"
+        placeholder="Casal (required)">
+      <span class="gap-1"></span>
+      <label for="church" class="labels">Igreja:</label>
+      <input type="text" id="church" class="textinput gap-2"
+        placeholder="Igreja (required)">
     </div>
 
-  </div>
-  
-  <br><br>
+    <br>
 
-  <div id="status-label" class="labels">
-    Status: <span id="status" class="gap-2"></span>
-  </div>
+    <div id="grid-container">
 
+      <div id="table-wrapper">
+        <table id="data-table">
+          <thead>
+            <tr>
+              <th>Casal</th>
+              <th>Igreja</th>
+              <th class="tradio">Select</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
 
-</body>
+      <div id="table-btn-wrapper">
+        <span class="table-btn" onclick="selectTopOrBottomRow(1)"
+          title="Select first row (of the table)">&#708;</span>
+        <span class="table-btn" onclick="selectTopOrBottomRow(0)"
+          title="Select last row (of the table)">&#709</span>
+      </div>
+
+    </div>
+
+    <br><br>
+
+    <div id="status-label" class="labels">
+      Status: <span id="status" class="gap-2"></span>
+    </div>
+
+  </body>
 
 </html>
