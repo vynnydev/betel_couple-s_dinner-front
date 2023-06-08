@@ -50,7 +50,7 @@ function loadData() {
       return docs.length
     })
     .then(n => {
-      document.getElementById("status").innerHTML = "Carregou " + n + " row(s)!"
+      document.getElementById("status").innerHTML = "Carregou " + n + " linha(s)!"
       document.getElementById("participant").innerHTML = "Carregou " + n*2
       if (n > 0) {
         selectRow()
